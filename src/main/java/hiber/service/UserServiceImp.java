@@ -26,4 +26,10 @@ public class UserServiceImp implements UserService {
       return userDao.listUsers();
    }
 
+   @Override
+   @Transactional(readOnly = true)
+   public List<User> findByCarModelAndSeries(String carModel,int series) {
+      return userDao.findByCarModelAndSeries(carModel, series);
+   }
+
 }

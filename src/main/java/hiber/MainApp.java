@@ -51,6 +51,11 @@ public class MainApp {
             System.out.println();
         }
 
+
+        System.out.println(userService.findByCarModelAndSeries("model1", 1));
+        System.out.println(userService.findByCarModelAndSeries("model2", 2));
+        System.out.println(userService.findByCarModelAndSeries("model3", 3));
+
         context.close();
     }
-}
+ }
